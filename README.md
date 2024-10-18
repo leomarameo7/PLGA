@@ -73,7 +73,7 @@ instructions](https://book.cds101.com/using-rstudio-server-to-clone-a-github-rep
 specified. The URL that must be entered into the `Repository URL` text
 box is:
 
-    https://github.com/leomarameo7/sortee_rep
+    https://github.com/leomarameo7/PLGA
 
 **IMPORTANT:** It is totally unrecommended to clone a git repository
 inside a cloud storage folder (e.g., Dropbox, OneDrive). Please note
@@ -119,28 +119,19 @@ renv::restore(prompt = FALSE)
 
 The file structure of this repository is as follows:
 
-    sortee_rep
+    PLGA
     |
-    |--- apps         (To store apps, e.g. in Shiny)
+    |--- data          (To store input datasets; must NEVER be checked-in to Github)
+    |     |--- raw
+    |     |--- processed
     |
-    |--- dat          (To store input datasets; must NEVER be checked-in to Github)
+    |--- notebooks_R    (Notebooks. To clean the raw data, visualize processed data, and fit the models.)
     |
-    |--- doc          (To store important documentation of the project)
-    |    |
-    |    |--- minutes (To store meeting minutes)
-    |
-    |--- notebooks    (Notebooks to explore data and test processes live here)
-    |
-    |--- output       (Processing outputs; files must be individually "checked-in"
-    |                 when necessary)
-    |
-    |--- R            (R functions created for this project live here)
-    |
+    |--- output       (Processing outputs)
+    |     |          
+    |     |--- figures
+    |     |--- models
     |--- renv         (System library necesssary for `renv` to work. DON'T TOUCH)
-    |
-    |--- src          (Source scripts that implement the main processes)
-    |
-    |--- www          (Project assets, e.g., images, bibliography files, etc.)
 
 Use the folders as indicated to store the different files and generate
 the outputs of the processes.
