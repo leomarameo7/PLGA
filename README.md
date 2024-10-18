@@ -1,10 +1,10 @@
 
-# Repository sortee_rep
+# Repository for the PLGA research project
 
 <!-- TODO: Add a repository description -->
 
-This is the repository that I am using to try understand how to use
-GitHub.
+This is the repository where you can find the R code, data and results about the paper entitled: Microbial plankton uptake enhances the degradation of a biodegradable microplastic (PLGA)
+
 
 # License
 
